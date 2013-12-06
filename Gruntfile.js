@@ -46,58 +46,31 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
-        'config/**/*.js',
         'index.js',
         'lib/**/*.js',
-        'routes/**/*.js',
         'test/**/*.js'
       ]
-    },
-    copy: {
-      main: {
-        files: [
-          // includes files within path
-          // {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
-
-          // includes files within path and its sub-directories
-          {expand: true, src: ['assets/**'], dest: '../module/assets/'},
-
-          // makes all src relative to cwd
-          // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
-
-          // flattens results to a single level
-          // {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'}
-        ]
-      }
     },
     watch: {
       scripts: {
         // files: '**/*.js',
         files: [
           'Gruntfile.js',
-          'config/**/*.js',
-          'app.js',
+          'index.js',
           'lib/**/*.js',
-          'routes/**/*.js',
-          'test/**/*.js',
-          // 'public/assets/js/build/**/*.js',
-          // 'public/assets/js/build/*.js',
-          // 'public/assets/css/*.less'
+          'test/**/*.js'
         ],
-        tasks: ['lint', 'test','less'],
+        tasks: ['lint', 'test'],
         options: {
           interrupt: true
         }
       }
-      // files: "./assets/stylesheets/less/*",
-      // tasks: ["less"]
     }
   });
 
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-jsbeautifier');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
