@@ -1,5 +1,6 @@
 {
-  "name": "detectCSS",
+  "title": "detectCSS",
+  "name": "detectcss",
   "description": "Simple module to detect browser CSS feature support",
   "version": "0.0.1",
   "main": "index.js",
