@@ -6,11 +6,14 @@ Simple module to detect browser CSS feature support, it's a simple alternative t
     $ npm install detectcss
     
 ## Usage
-detectCSS is intented to use in a CommonJS module environment, check out browserify
+detectCSS is intented to use in a CommonJS module environment, check out [Browserify](http://browserify.org/ "Browserify")
+
     var detectcss = require('detectcss');
     
     //detect if browser supports CSS transforms
     detectcss.feature("transform"); //returns true if browser supports CSS transforms
+    
+    //return CSS style with browser prefix
     detectcss.prefixed("transform"); //returns browser prefixed support, example: msTransition
     
 ### Thanks
