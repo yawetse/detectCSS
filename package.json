@@ -2,7 +2,7 @@
   "title": "detectCSS",
   "name": "detectcss",
   "description": "Simple module to detect browser CSS feature support",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
