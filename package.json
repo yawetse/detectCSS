@@ -2,7 +2,7 @@
   "title": "detectCSS",
   "name": "detectcss",
   "description": "Simple module to detect browser CSS feature support",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
@@ -10,6 +10,10 @@
   "scripts": {
     "test": "mocha -R spec --recursive",
     "watch": "grunt watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yawetse/detectCSS.git"
   },
   "dependencies": {},
   "devDependencies": {
